@@ -48,9 +48,34 @@ void main(){
 
   ///list.unmodified
 
-  var l5= List.unmodifiable(l3);
-  l5[2]=1000;
-  print("l5= $l5");
+ /// var l5= List.unmodifiable(l3);
+  ///l5[2]=1000;
+  ///print("l5= $l5");
+
+  ///list.filled
+
+
+  var l6= List.filled(10,1,growable: true);
+
+  l6[3]= 4;
+  l6[2]= 5;
+  l6[5]= 6;
+  l6[6]= 7;
+  l6.add(100);
+
+  print("l6=$l6");
+
+  ///list.generate
+  ///(((((((((( IMPORTANT))))))))))
+
+
+
+  var l7 = List.generate(10, (index) => index);
+  ///the null value section avde nammuk venda endh opertion venemengilum kodukkaam
+  ///normal function aayo lamda function aayo csll chyyaam
+  l7.add(20);
+
+  print("l7=$l7");
 
 
 
